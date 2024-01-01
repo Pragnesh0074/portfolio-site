@@ -4,7 +4,7 @@ import img1 from '../../assets/img1.png';
 
 function MainComp() {
     return (
-        <div className='mainBlock flex flex-row justify-center'>
+        <div className='mx-10 md:ml-0 flex flex-col md:flex-row justify-center'>
             <div className='leftSubBlock flex flex-col' style={{color:'white'}}>
                 <p className="[font-family:'Fira_Code-SemiBold',Helvetica] font-semibold text-transparent text-[32px]">
                     <span className="text-[#ffffff]">Pragnesh is a </span>
@@ -21,7 +21,7 @@ function MainComp() {
                     <FlatButton stateProp="default" text="Contact me!!" type="primary" />
                 </div>
             </div>
-            <div>
+            <div className='mt-10 md:mt-0'>
                 <img src={img1} alt='Img Not Found' className='h-auto max-w-full'/>
             </div>
         </div>
