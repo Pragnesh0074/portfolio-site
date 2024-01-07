@@ -2,8 +2,17 @@ import { WorkCard } from '../WorkCard';
 import img1 from '../../assets/homeWorkImg1.jpg'
 import img2 from '../../assets/homeWorkImg2.png'
 import img3 from '../../assets/homeWorkImg3.jpg'
+import { useNavigate } from "react-router-dom";
 
 export default function WorkComp() {
+
+    let navigate = useNavigate();
+    let contactPath = "/work"; 
+    
+    function clickFun() {
+        navigate(contactPath);
+    }
+
     const card1Techs = ['Android', 'Java','XD']
     const card2Techs = ['Flutter', 'Dart', 'Figma']
     const card3Techs = ['Html', 'Bootstrap', 'Js', 'Figma']
@@ -15,11 +24,11 @@ export default function WorkComp() {
                 <span className="text-white text-base font-medium font-['Fira Code']">View All</span>
             </div>
             <div className='flex flex-col md:flex-row justify-between mt-10 mx-5 md:mx-0'>
-                <WorkCard src={img1} heading='Food Ordering App' techs={card1Techs}  detail='Online Application For Food Ordering'/>
+                <WorkCard src={img1} heading='Food Ordering App' techs={card1Techs}  detail='Online Application For Food Ordering' clickFun={clickFun}/>
                 <div className='mt-10 md:ml-10' />
-                <WorkCard src={img2} heading='Restaurant Table Booking App' techs={card2Techs} detail='Online Application For Restaurant Table Booking'/>
+                <WorkCard src={img2} heading='Restaurant Table Booking App' techs={card2Techs} detail='Online Application For Restaurant Table Booking' clickFun={clickFun}/>
                 <div className='mt-10 md:ml-10' />
-                <WorkCard src={img3} heading='Desk Article Website' techs={card3Techs} detail='Online Website For Selling Desk Articles'/>
+                <WorkCard src={img3} heading='Desk Article Website' techs={card3Techs} detail='Online Website For Selling Desk Articles' clickFun={clickFun}/>
             </div>
         </div>
     );

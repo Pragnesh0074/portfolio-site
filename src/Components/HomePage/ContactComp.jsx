@@ -28,7 +28,13 @@ export  function ContactComp() {
                                 <div className="w-8 h-8 relative">
                                     <InstagramIcon />
                                 </div>
-                                <div className="text-gray-400 text-base font-normal font-['Fira Code']">@pragnesh_308</div>
+                                <div className="text-gray-400 text-base font-normal font-['Fira Code']">@pragnesh_308 - personal</div>
+                            </div>
+                            <div className="justify-start items-center gap-[5px] inline-flex">
+                                <div className="w-8 h-8 relative">
+                                    <InstagramIcon />
+                                </div>
+                                <div className="text-gray-400 text-base font-normal font-['Fira Code']">@pragnesh_308 - work</div>
                             </div>
                             <div className="justify-start items-center gap-[5px] inline-flex">
                                 <div className="w-8 h-8 relative">

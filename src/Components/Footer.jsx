@@ -1,7 +1,10 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
+
+
     return (
         <div>
             <div class="w-auto h-auto border border-gray-400"></div>
@@ -17,9 +20,15 @@ export function Footer() {
                 <div class="mx-10 md:mx-0 w-auto h-auto flex-col justify-start items-start gap-3 inline-flex">
                     <div class="text-white text-2xl font-medium font-['Fira Code']">Media</div>
                     <div class="w-auto h-auto relative flex flex-row justify-between">
-                        <InstagramIcon />
+                        <Link to="https://www.instagram.com/pragnesh_308" target="_blank" rel="noopener noreferrer">
+                            <InstagramIcon />
+                        </Link>
                         <div className='ml-5' />
-                        <EmailIcon />
+                        <div>
+                            <a href="mailto:PragneshVagadiya0074@gmial.com">
+                                <EmailIcon />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

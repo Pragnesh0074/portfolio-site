@@ -1,8 +1,17 @@
 import { FlatButton } from '../FlatButton';
 import img1 from '../../assets/img1.png';
+import { useNavigate } from "react-router-dom";
 
 
 function MainComp() {
+
+    let navigate = useNavigate();
+    let contactPath = "/contact"; 
+    
+    function clickFun() {
+        navigate(contactPath);
+    }
+
     return (
         <div className='mx-10 md:ml-0 flex flex-col md:flex-row justify-center'>
             <div className='leftSubBlock flex flex-col' style={{color:'white'}}>
@@ -18,7 +27,7 @@ function MainComp() {
                     </span>
                 </p>
                 <div className='mt-10'>
-                    <FlatButton stateProp="default" text="Contact me!!" type="primary" />
+                    <FlatButton stateProp="default" text="Contact me!!" type="primary" clickFun={clickFun} />
                 </div>
             </div>
             <div className='mt-10 md:mt-0'>

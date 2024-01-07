@@ -1,7 +1,15 @@
 import img from '../../assets/img3.png'
 import { FlatButton } from '../../Components/FlatButton'
+import { useNavigate } from "react-router-dom";
 
 export  function AboutComp() {
+
+    let navigate = useNavigate();
+    let contactPath = "/about"; 
+    
+    function clickFun() {
+        navigate(contactPath);
+    }
 
     return (
         <div className="flex flex-col md:mx-20">
@@ -13,13 +21,12 @@ export  function AboutComp() {
                 <div className='rightSubBlock flex flex-col' style={{color:'white'}}>
                     <div className="w-auto text-gray-400 text-base font-normal font-['Fira Code'] leading-relaxed">Hello, i’m Pragnesh!<br/><br/>I’m a self-taught mobile application and web developer based in Rajkot, Gujrat, India. I can develop any type of responsive mobile application and websites from scratch and raise them into modern user-friendly web experiences. <br/><br/>Transforming my creativity and knowledge into a full fuctional product has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</div>
                     <div className="w-full h-auto mt-10 justify-start items-start gap-2.5 inline-flex">
-                        <FlatButton stateProp="default" text="View" type="primary" />
+                        <FlatButton stateProp="default" text="View" type="primary" clickFun={clickFun}/>
                     </div>
                 </div>
                 <div className='mt-10 md:mt-0 md:mr-20'>
                     <img src={img} alt='Img Not Found' className='h-auto max-w-full'/>
                 </div>
-                
             </div>
         </div>
     );

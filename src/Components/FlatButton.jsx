@@ -2,14 +2,16 @@ import PropTypes from "prop-types";
 import React from "react";
 import { useReducer } from "react";
 
-export const FlatButton = ({ stateProp, type, text = "Live &lt;~&gt;" }) => {
+export const FlatButton = ({ clickFun, stateProp, type, text = "Live &lt;~&gt;" }) => {
   const [state, dispatch] = useReducer(reducer, {
     state: stateProp || "default",
     type: type || "primary",
   });
 
+
+
   return (
-    <div
+    <div onClick={clickFun}
       className={`border border-solid inline-flex items-start gap-[10px] px-[16px] py-[8px] relative ${
         state.type === "secondary" ? "border-gray" : "border-primary"
       } ${
@@ -31,7 +33,7 @@ export const FlatButton = ({ stateProp, type, text = "Live &lt;~&gt;" }) => {
             state.type === "secondary" ? "text-gray" : "text-white"
         }`}
         >
-        {state.type === "primary" && <>{text}</>}
+        {state.type === "primary" && <span>{text}</span>}
 
         {state.type === "secondary" && <>Demo |&gt;</>}
     </div>
