@@ -23,7 +23,7 @@ function MainComp() {
                 </p>
                 <p className="mt-5 [font-family:'Fira_Code-Regular',Helvetica] font-normal text-gray text-[16px]">
                     <span>
-                        He crafts responsive websites where technologies meet creativity
+                        He crafts responsive mobile application and websites where technologies meet creativity
                     </span>
                 </p>
                 <div className='mt-10'>

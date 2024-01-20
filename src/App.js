@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import AboutPage from './Pages/AboutPage';
 import ContactPage from './Pages/ContactPage';
 import HomePage from './Pages/HomePage'
+import ProjectPage from './Pages/ProjectPage';
 import WorkPage from './Pages/WorkPage';
 import { Routes, Route } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/work" element={<WorkPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/project" element={<ProjectPage />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Routes>
       <div className="mt-10" />  

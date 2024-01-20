@@ -1,8 +1,8 @@
 import { WorkCard } from '../WorkCard';
-import img1 from '../../assets/homeWorkImg1.jpg'
-import img2 from '../../assets/homeWorkImg2.png'
-import img3 from '../../assets/homeWorkImg3.jpg'
-import img4 from '../../assets/workImg4.jpg'
+import img1 from '../../assets/foodhub_img_1.jpg'
+import img2 from '../../assets/ri_img_1.png'
+import img3 from '../../assets/da_img_1.jpg'
+import img4 from '../../assets/vastu_compass_img_1.jpg'
 import img5 from '../../assets/workImg5.png'
 
 export default function CompleteWorkComp() {
