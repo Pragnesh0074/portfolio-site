@@ -22,20 +22,27 @@ export default function ProjectPage() {
                 </div>
             </div>
             <div className="mt-10 flex justify-center">
-                <div className="flex flex-row">
+                <div className="flex flex-row align-item-center">
                     {
-                        params.state.imgs.map((item) => {
-                            return <img src={require('../assets/'+item)} alt='' className='max-h-20 max-w-20 md:max-h-48 md:max-w-48 rounded-xl ml-5' onClick={() => setMainImg(item)}/>
+                        params.state.imgs.map((item, index) => {
+                            if(index % 2 === 1) {
+                                return <img src={require('../assets/'+item)} alt='' className='max-h-20 max-w-20 md:max-h-48 md:max-w-48 rounded-xl flex ml-5' onClick={() => setMainImg(item)}/>
+                            }
+                            else {
+                                return <img src={require('../assets/'+item)} alt='' className='max-h-20 max-w-20 md:max-h-48 md:max-w-48 rounded-xl flex' onClick={() => setMainImg(item)}/>
+                            }
                         })
                     }
                 </div>
             </div>
-            <div className="mt-20 heading">
-                <div className="w-auto text-gray-400 text-base md:text-2xl font-normal font-['Fira Code'] leading-relaxed">Desciption :- {params.state.desc}</div>
-                <div className="self-stretch justify-start items-start gap-2 inline-flex mt-5">
-                    <div className="w-auto text-gray-400 text-base md:text-2xl font-normal font-['Fira Code'] leading-relaxed">Used Technologies :- </div>
+            <div className="mt-20 mx-0 md:mx-20">
+                <div className="w-auto text-gray-400 text-base md:text-2xl font-normal font-['Fira Code'] leading-relaxed">Desciption :- </div>
+                <div className="w-auto text-gray-400 text-base md:text-2xl font-normal font-['Fira Code'] leading-relaxed mt-5">{params.state.desc}</div>
+                <div className="w-auto justify-start items-start gap-2 inline-flex md:flex mt-5 text-gray-400 text-base md:text-2xl font-normal font-['Fira Code'] leading-relaxed">
+                    Used Technologies :-
+                </div>
+                <div className="w-auto justify-start items-start gap-2 inline-flex md:flex mt-5 text-gray-400 text-base md:text-2xl font-normal font-['Fira Code'] leading-relaxed">
                     {
-                        
                         params.state.techs.map((item) => {
                             return <div className="text-base md:text-2xl text-gray-400 font-normal font-['Fira Code']">{item}</div>
                         })
