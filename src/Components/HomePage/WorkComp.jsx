@@ -8,6 +8,7 @@ export default function WorkComp() {
 
     let navigate = useNavigate();
     let contactPath = "/project";
+    let viewAllPath = "/work";
 
     const fh_imgs = ['foodhub_img_1.jpg','foodhub_img_2.jpg']
     const ri_imgs = ['ri_img_1.png','ri_img_2.jpg']
@@ -31,13 +32,18 @@ export default function WorkComp() {
             }
         });
     }
+
+    function viewAllFun() {
+        navigate(viewAllPath);
+    }
+
     
     return (
         <div className="flex flex-col justify-center md:mx-20">
             <div className='flex flex-row justify-between mx-5 md:ml-0' style={{alignItems: 'center'}}>
                 <span className="text-white text-[32px] font-medium font-['Fira Code']">#Projects</span>
                 <div style={{ flex: 1, backgroundColor: "#6F38C5", height: "3px" }} className='ml-5 mr-20' />
-                <span className="text-white text-base font-medium font-['Fira Code']">View All</span>
+                <span className="text-white text-base font-medium font-['Fira Code']" onClick={viewAllFun}>View All</span>
             </div>
             <div className='flex flex-col md:flex-row justify-between mt-10 mx-5 md:mx-0'>
                 <WorkCard src={img1} heading='FoodHub' techs={fhTechs}  detail='Online Application For Food Ordering' clickFun={() => {clickFun('FoodHub', fh_imgs , fh_desc, fhTechs)}}/>

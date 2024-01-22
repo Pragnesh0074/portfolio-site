@@ -10,7 +10,7 @@ export default function CompleteWorkComp() {
     const card2Techs = ['Flutter', 'Dart', 'Figma']
     const card3Techs = ['Html', 'Bootstrap', 'Js', 'Figma']
     const card4Techs = ['Flutter', 'Dart', 'Figma']
-    const card5Techs = ['React', 'Telwind' ,'Figma']
+    const card5Techs = ['React', 'Tailwind' ,'Figma']
 
     return(
         <div>

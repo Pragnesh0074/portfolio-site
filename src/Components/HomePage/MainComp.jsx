@@ -16,12 +16,12 @@ function MainComp() {
         <div className='mx-10 md:ml-0 flex flex-col md:flex-row justify-center'>
             <div className='leftSubBlock flex flex-col' style={{color:'white'}}>
                 <p className="[font-family:'Fira_Code-SemiBold',Helvetica] font-semibold text-transparent text-[32px]">
-                    <span className="text-[#ffffff]">Pragnesh is a </span>
-                    <span className="text-[#c778dd]">mobile application developer</span>
+                    <span className="text-[#ffffff]">I'm Pragnesh, and I bring ideas to life<br/> through the magic of <br /></span>
+                    <span className="text-[#c778dd]">mobile application </span>
                     <span className="text-[#ffffff]"> and </span>
-                    <span className="text-[#c778dd]"><br/>full-stack developer</span>
+                    <span className="text-[#c778dd]"><br/>web development</span>
                 </p>
-                <p className="mt-5 [font-family:'Fira_Code-Regular',Helvetica] font-normal text-gray text-[16px]">
+                <p className="mt-5 mr-0 md:mr-10 [font-family:'Fira_Code-Regular',Helvetica] font-normal text-gray text-[16px]">
                     <span>
                         He crafts responsive mobile application and websites where technologies meet creativity
                     </span>
