@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { FlatButton } from '../Components/FlatButton';
+// import { FlatButton } from '../Components/FlatButton';
 
 export function WorkCard(props) {
     return(
         <div className="w-full h-auto border border-gray-400 flex-col justify-start items-start inline-flex" onClick={props.clickFun}>
-            <img className="w-full h-auto border-b border-gray-400" src={props.src} />
+            <img className="w-full h-auto md:h-80 border-b border-gray-400" src={props.src} />
             <div className="self-stretch p-2 justify-start items-start gap-2 inline-flex">
                 {
                     props.techs.map((item) => {

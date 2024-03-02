@@ -15,6 +15,7 @@ function Header() {
                 <Link to="/work" className="mx-2" style={{color:'white'}}>Work</Link>
                 <Link to="/about" className="mx-2" style={{color:'white'}}>About</Link>
                 <Link to="/contact" className="mx-2" style={{color:'white'}}>Contact</Link>
+                <Link to="/cv" className="mx-2" style={{color:'white'}}>CV</Link>
                 <Outlet />
             </div>
         </div>

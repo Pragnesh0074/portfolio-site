@@ -3,6 +3,7 @@ import { Footer } from './Components/Footer';
 import Header from './Components/Header';
 import AboutPage from './Pages/AboutPage';
 import ContactPage from './Pages/ContactPage';
+import CvPage from './Pages/CvPage';
 import HomePage from './Pages/HomePage'
 import ProjectPage from './Pages/ProjectPage';
 import WorkPage from './Pages/WorkPage';
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/project" element={<ProjectPage />} />
+          <Route path="/cv" element={<CvPage />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Routes>
       <div className="mt-10" />  

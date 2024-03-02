@@ -17,8 +17,8 @@ export default function ProjectPage() {
                 <div style={{ flex: 1, backgroundColor: "#6F38C5", height: "3px" }} className='ml-10' />
             </div>
             <div className="mt-10">
-                <div>
-                    <img src={require('../assets/'+mainImg)} alt='' className='h-auto max-w-full rounded-xl'/>
+                <div className="flex justify-center">
+                    <img src={require('../assets/'+mainImg)} alt='' className='h-auto md:h-3/5 max-w-full md:w-3/5 rounded-xl'/>
                 </div>
             </div>
             <div className="mt-10 flex justify-center">
