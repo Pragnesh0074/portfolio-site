@@ -14,7 +14,7 @@ export function Footer() {
                         <span className="text-white text-base font-medium font-['Fira Code']" style={{color:'white'}}>Pragnesh Vagadiya</span>
                     </div>
                     <div className='mt-5'>
-                        <span className="text-white text-base font-medium font-['Fira Code']" style={{color:'white'}}>Application and Web Developer</span>
+                        <span className="text-white text-base font-medium font-['Fira Code']" style={{color:'white'}}>Mobile Application Developer<br/>Full Stack Web Developer</span>
                     </div>
                 </div>
                 <div class="mx-10 md:mx-0 w-auto h-auto flex-col justify-start items-start gap-3 inline-flex">
